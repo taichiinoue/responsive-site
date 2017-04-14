@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #faf0e6; }
+
+a {
+  color: #ffc0cb;
+  text-decoration: none; }
+  a:visited {
+    color: #ff8da1; }
+  a:hover {
+    color: #ff8da1; }
+  a:active {
+    color: #ffdae0; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #poem h3, .button {
+  font-family: 'Abel', sans-serif; }
+
+@media (min-width: 769px) {
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; } }
+/* Header
+------------------------------------------------------------*/
+.eyecatch {
+  background-image: url("../images/img_top.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+/* main
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+.container {
+  margin: 20px; }
+
+#poem {
+  background-color: #ffe4e1; }
+  #poem .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #poem h2 {
+    color: #ffc0cb;
+    margin-bottom: 20px; }
+  #poem .poem-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #faf0e6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #poem h3 {
+    color: #ffc0cb;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+
+@media (min-width: 769px) {
+  #poem .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #poem .poem-box {
+    margin: 0 10px; } }
+.button {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  width: 180px;
+  display: block;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #ffc0cb;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 1.6rem; }
+
+/*# sourceMappingURL=style.css.map */
